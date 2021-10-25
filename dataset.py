@@ -2,21 +2,21 @@ import os
 from PIL import Image
 from torch.utils.data import Dataset
 import numpy as np
-
+import os
 
 class CarvanaDataset(Dataset):
-    def __init__(self, image_dir, mask_dir, transform=None):
-        self.image_dir = image_dir
-        self.mask_dir = mask_dir
+    def __init__(self,transform=None):
+        self.image_dir = os.path.join("data", "train")
+        self.mask_dir = os.path.join("data", "train_masks")
         self.transform = transform 
-        self.images = os.listdir(image_dir)
+        self.images = os.listdir(self.image_dir)
     def __len__(self):
         return len(self.images)
 
     def __getitem__(self, index):
         img_path = os.path.join(self.image_dir, self.images[index])
         mask_path = os.path.join(self.mask_dir, self.images[index].replace(".jpg", "_mask.gif"))
-
+        
         #Converting the image and the mask to a numpy array
         
         #converting the imahe into torch supported channels
@@ -29,10 +29,7 @@ class CarvanaDataset(Dataset):
 
         mask[mask == 255.0] = 1.0
 
-        if self.transform is not None:
-            augumentation = self.transform(image= image, mask= mask)
-            mask = augumentation["mask"]
-            image = augumentation["image"]
+        
 
-
-            return image, mask
+            
+        return image, mask
