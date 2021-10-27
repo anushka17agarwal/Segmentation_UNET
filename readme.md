@@ -5,6 +5,7 @@ This is the implementation of UNET on <a href= "https://www.kaggle.com/c/carvana
 This dataset contains a large number of car images (as .jpg files). Each car has exactly 16 images, each one taken at different angles.
 
 For the training set, you are provided a .gif file that contains the manually cutout mask for each image. 
+Link to download the dataset: <a href="https://www.kaggle.com/c/carvana-image-masking-challenge"> Here </a>
 
 
 ## UNET Architecture
