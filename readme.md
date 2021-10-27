@@ -8,7 +8,7 @@ For the training set, you are provided a .gif file that contains the manually cu
 
 
 ## UNET Architecture
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![alt text](https://github.com/anushka17agarwal/Segmentation_UNET/blob/main/images/unet.png)
 
 
 The UNET CNN architecture may be divided into the *Encoder*, *Bottleneck* and *Decoder* blocks, followed by a final segmentation output layer. 
