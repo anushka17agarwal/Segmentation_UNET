@@ -8,6 +8,9 @@ For the training set, you are provided a .gif file that contains the manually cu
 Link to download the dataset: <a href="https://www.kaggle.com/c/carvana-image-masking-challenge"> Here </a>
 
 
+## Downloading the trained Model:
+<a href="https://drive.google.com/drive/folders/1t-lstpjkBSmbJjldC8Ic8CwVtl1cMowb?usp=sharing"> Here </a>
+
 ## UNET Architecture
 ![alt text](https://github.com/anushka17agarwal/Segmentation_UNET/blob/main/images/unet.png)
 
@@ -50,4 +53,5 @@ To use the repo and run inferences, please follow the guidelines below
 
 
 ## Accuracy Scores
-- Got 38967548.0/39091200 with acc 99.68Dice score: 0.9924604296684265
+-  Got 38967548.0/39091200 with acc 99.68Dice score: 0.9924604296684265
+     
