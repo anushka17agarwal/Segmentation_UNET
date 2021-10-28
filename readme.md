@@ -46,3 +46,8 @@ To use the repo and run inferences, please follow the guidelines below
 - Running the file for inference:
 
         $ python3 train.py
+
+
+
+## Accuracy Scores
+- Got 38967548.0/39091200 with acc 99.68Dice score: 0.9924604296684265
